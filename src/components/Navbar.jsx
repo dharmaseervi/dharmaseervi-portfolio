@@ -7,9 +7,9 @@ import profile from "../assets/profile.png";
 
 const navigation = [
   { name: "Home", href: "/", current: true },
-  { name: "Blogs", href: "blog", current: false },
-  { name: "Projects", href: "project", current: false },
-  { name: "About", href: "about", current: false },
+  { name: "Blogs", href: "/blog", current: false },
+  { name: "Projects", href: "/project", current: false },
+  { name: "About", href: "/about", current: false },
 ];
 
 function classNames(...classes) {
