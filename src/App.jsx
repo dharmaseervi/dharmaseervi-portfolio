@@ -25,11 +25,11 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/blog" element={<Blogs />} />
-          <Route path="/blog/:skillId" element={<BlogDetails />} />
+          <Route path="/" element={<Home />} exact />
+          <Route path="/about" element={<About />} exact />
+          <Route path="/project" element={<Project />} exact />
+          <Route path="/blog" element={<Blogs />} exact />
+          <Route path="/blog/:skillId" element={<BlogDetails />} exact />
         </Routes>
         <Footer />
       </BrowserRouter>
