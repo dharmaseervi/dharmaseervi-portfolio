@@ -78,7 +78,7 @@ const projects = [
 
 const Project = () => {
   return (
-    <div className=" py-16">
+    <div className="py-16 px-4">
     <div className="container mx-auto text-center bg-gradient-to-r py-10 rounded from-purple-800 to-indigo-900 text-white">
       <h1 className="text-4xl font-bold mb-4">
         Explore My Projects
@@ -89,7 +89,7 @@ const Project = () => {
       </p>
     </div>
 
-      <div className="container mx-auto mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-2">
+      <div className="container mx-auto mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-4">
         {projects.map((project, index) => (
           <motion.div
             key={index}
@@ -98,7 +98,7 @@ const Project = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
           >
-            <div className="bg-gradient-to-r  from-purple-800 to-indigo-900 text-white rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 h-full  ">
+            <div className="bg-gradient-to-r  from-purple-800 to-indigo-900 text-white rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105 h-96 sm:h-full  ">
               <div className="p-6 flex flex-col h-full">
                 {/* Project Title */}
                 <h3 className="text-xl font-bold mb-4 cursor-pointer">
