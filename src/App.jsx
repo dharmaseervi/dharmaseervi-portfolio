@@ -26,9 +26,9 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="project" element={<Project />} />
-          <Route path="blog" element={<Blogs />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/blog" element={<Blogs />} />
           <Route path="/blog/:skillId" element={<BlogDetails />} />
         </Routes>
         <Footer />
