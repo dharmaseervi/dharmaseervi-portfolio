@@ -53,7 +53,7 @@ const projects = [
   },
   {
     title: "WEATHER APP",
-    link: "https://dharmaseervi.github.io/weatherApp/",
+    link: "https://weatherappsync.netlify.app",
     description:
       "Spearheaded the creation of a dynamic website leveraging an API to fetch real-time weather data for searched locations. Innovatively incorporated location detection to provide instant weather updates for the user’s current location. Crafted with precision using ReactJS to ensure a seamless and user-friendly experience.",
     techStack: ["javascript", "html", "css", "API Integration"],
@@ -79,15 +79,13 @@ const projects = [
 const Project = () => {
   return (
     <div className="py-16 px-4">
-    <div className="container mx-auto text-center bg-gradient-to-r py-10 rounded from-purple-800 to-indigo-900 text-white">
-      <h1 className="text-4xl font-bold mb-4">
-        Explore My Projects
-      </h1>
-      <p className="text-lg mb-8">
-        Check out the amazing projects I've worked on and discover the
-        technologies I've used.
-      </p>
-    </div>
+      <div className="container mx-auto text-center bg-gradient-to-r py-10 rounded from-purple-800 to-indigo-900 text-white">
+        <h1 className="text-4xl font-bold mb-4">Explore My Projects</h1>
+        <p className="text-lg mb-8">
+          Check out the amazing projects I've worked on and discover the
+          technologies I've used.
+        </p>
+      </div>
 
       <div className="container mx-auto mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3  p-4">
         {projects.map((project, index) => (
